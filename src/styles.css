@@ -1,1 +1,36 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    font-family: 'Montserrat', sans-serif;
+    /* background: linear-gradient(45deg, #2193b0, #6dd5ed); */
+    background-color: #222;;
+    height: 100%;
+    margin: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    /* Remove underline */
+    cursor: pointer;
+    /* Change cursor to pointer on hover */
+}
+
+nav ul li a:hover {
+    text-decoration: solid;
+    /* Ensure no underline on hover */
+}
+
+.app-container {
+    min-height: 100vh;
+    /* Set the minimum height of the container to 100% of the viewport height */
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex-grow: 1;
+    overflow-y: auto;
+    /* Add vertical scrollbar when content exceeds viewport height */
+    max-height: calc(100vh - 100px);
+    /* Adjust this value based on the height of the header and footer */
+}

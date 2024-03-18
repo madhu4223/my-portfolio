@@ -1,0 +1,16 @@
+<section class="skills">
+    <div class="container">
+      <!-- <h2>Skills</h2> -->
+      <div class="skill-cards">
+        @for (skill of skills; track skill.label) {
+            <div class="skill-card">
+                <img src="assets/images/React_icon.png" alt="React.js" class="skill-icon">
+                <p>{{skill.label}}</p>
+              </div>
+        }
+        
+        <!-- Add more skill cards for other technologies -->
+      </div>
+    </div>
+  </section>
+  

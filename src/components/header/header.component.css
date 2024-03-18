@@ -1,0 +1,96 @@
+header {
+  position: sticky;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  z-index: 1000;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  /* text-decoration: underline; */
+  color: burlywood;
+}
+
+.active {
+  font-weight: bold;
+  /* Highlight active link */
+  color: burlywood !important;
+}
+
+/* .resume-button {
+  color: #fff;
+  background-color: #007bff; 
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-left: 20px; 
+}
+
+.resume-button:hover {
+  background-color: #0056b3; 
+} */
+
+/* Add styling for the resume button */
+.resume-button {
+  color: #00bcd4;
+  /* Button text color */
+  background-color: transparent;
+  /* Transparent background */
+  border: 2px solid #00bcd4;
+  /* Button border */
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-left: 20px;
+  /* Adjust spacing between resume button and navigation items */
+}
+
+.resume-button:hover {
+  background-color: rgba(0, 123, 255, 0.1);
+  /* Button background color on hover */
+}
+
+.resume-button:focus {
+  outline: none;
+  /* Remove focus outline */
+}
+
+.resume-button:hover,
+.resume-button:focus {
+  color: #0056b3;
+  /* Button text color on hover and focus */
+  border-color: #0056b3;
+  /* Button border color on hover and focus */
+}
+
+
+.nav-section {
+  margin-right: 10px;
+}
