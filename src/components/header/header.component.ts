@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
+
 
 @Component({
   selector: 'app-header',
@@ -9,5 +10,10 @@ import { RouterModule } from '@angular/router';
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
+  constructor(private router: Router) {}
 
+  isActive(route: string): string {
+    console.log(">>>. ", this.router.url, route)
+    return this.router.url === route ? "active" : "";
+  } 
 }

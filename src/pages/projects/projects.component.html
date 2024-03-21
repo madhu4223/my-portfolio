@@ -1,1 +1,18 @@
-<p>projects works!</p>
+<section class="projects">
+    <div class="container">
+        <h2 class="m-label">Projects</h2>
+        <div class="project-cards">
+            @for(project of projects; track project.id){
+            <div class="project-card">
+
+                <div class="project-info">
+                    <h3>{{project.name}}</h3>
+                    <p class="short-desc">{{project.shortDesc}}</p>
+                    <!-- <a href="/project/{{project.id}}" class="btn br-2">View Details</a> -->
+                </div>
+            </div>
+            }
+            <!-- Add more project cards -->
+        </div>
+    </div>
+</section>

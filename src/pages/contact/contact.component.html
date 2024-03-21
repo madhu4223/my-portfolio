@@ -1,0 +1,22 @@
+<section class="contact">
+  <div class="container">
+    <h2 class="m-label">Contact</h2>
+    <div class="contact-info">
+      <table class="contact-info-grid">
+          @for (contact of contactInfo; track contact.displayName) {
+            <tr>
+            <th>{{contact.displayName}}:</th>
+            @if (contact.isLink) {
+              <td>
+                <a href="{{contact.hrefLink}}" target="_blank" class="value">{{contact.hrefLink}}</a>
+              </td>
+            }
+            @else {
+              <td>{{contact.displayVal}}</td>
+            }
+          </tr>
+          }
+      </table>
+    </div>
+  </div>
+</section>

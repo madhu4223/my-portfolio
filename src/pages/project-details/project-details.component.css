@@ -1,0 +1,93 @@
+.view-details {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .view-details .container {
+    max-width: 800px;
+    width: 90%;
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .view-details .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .view-details h2 {
+    margin: 0;
+  }
+  
+  .project-details {
+    padding: 20px;
+  }
+  
+  .description h3,
+  .technologies h3 {
+    margin-top: 0;
+  }
+  
+  .technologies ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .buttons {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .buttons .btn {
+    margin-right: 10px;
+  }
+  
+  .close-btn {
+    background-color: #dc3545; /* Red color for close button */
+    color: #fff;
+  }
+  
+  .close-btn:hover {
+    background-color: #bb2d3b; /* Darker red color on hover */
+  }
+/* Adjust the close button */
+.close-btn {
+    background-color: #dc3545; /* Red color for close button */
+    color: #fff;
+    padding: 8px 16px; /* Add padding */
+    border-radius: 2px; /* Add border radius */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    text-decoration: none;
+  }
+  
+  .close-btn:hover {
+    background-color: #bb2d3b; /* Darker red color on hover */
+  }
+  
+  /* Make technologies used horizontal */
+  .technologies ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .technologies ul li {
+    display: inline;
+  }
+  
+  .technologies ul li:not(:last-child)::after {
+    content: ', ';
+  }
+    

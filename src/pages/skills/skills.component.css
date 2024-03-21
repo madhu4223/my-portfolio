@@ -15,12 +15,13 @@
   .skill-cards {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
   }
   
   .skill-card {
     width: 200px;
     padding: 20px;
-    margin: 0 10px;
+    margin: 0 10px 20px 0;
     text-align: center;
     background-color: #fff;
     border-radius: 10px;
@@ -30,6 +31,7 @@
   
   .skill-card:hover {
     transform: scale(1.1); /* Zoom in effect on hover */
+    cursor: default;
   }
   
   .skill-icon {

@@ -1,10 +1,10 @@
 <section class="skills">
     <div class="container">
-      <!-- <h2>Skills</h2> -->
+      <h2 class="m-label">Skills</h2>
       <div class="skill-cards">
         @for (skill of skills; track skill.label) {
             <div class="skill-card">
-                <img src="assets/images/React_icon.png" alt="React.js" class="skill-icon">
+                <img src={{skill.path}} alt="React.js" class="skill-icon">
                 <p>{{skill.label}}</p>
               </div>
         }

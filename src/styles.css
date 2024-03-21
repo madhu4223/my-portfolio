@@ -34,3 +34,10 @@ main {
     max-height: calc(100vh - 100px);
     /* Adjust this value based on the height of the header and footer */
 }
+
+.br-2 {
+    border-radius: 2px !important;
+}
+.m-label{
+    color: white;
+  }
