@@ -1,0 +1,1 @@
+body{font-family:Montserrat,sans-serif;background-color:#222;height:100%;margin:0}nav ul li a{color:#fff;text-decoration:none;cursor:pointer}nav ul li a:hover{text-decoration:solid}.app-container{min-height:100vh;display:flex;flex-direction:column}main{flex-grow:1;overflow-y:auto;max-height:calc(100vh - 100px)}.br-2{border-radius:2px!important}.m-label{color:#fff}
